@@ -5,4 +5,7 @@
     "[astro]": {
         "editor.defaultFormatter": "astro-build.astro-vscode"
     },
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "/Users/setoelka/.local/share/mise/shims/node"
+    },
 }

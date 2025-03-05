@@ -1,10 +1,10 @@
-<h1 align="center">CelestialDocs</h1>
+<h1 align="center">BACH Money Docs</h1>
 
 <p align="center">
-<img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/HYP3R00T/CelestialDocs/deploy.yml?style=for-the-badge&labelColor=363a4f&color=8aadf4">
+<img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/paydii/bach-money-docs/deploy.yml?style=for-the-badge&labelColor=363a4f&color=8aadf4">
 </p>
 
-**CelestialDocs** is a simple and versatile documentation template built with Astro. It provides a clean and minimal interface for creating documentation websites, leveraging the power of Astro and Tailwind CSS for a streamlined user experience.
+**BACH Money Docs** is a simple and versatile documentation template built with Astro. It provides a clean and minimal interface for creating documentation websites, leveraging the power of Astro and Tailwind CSS for a streamlined user experience.
 
 ## Features
 
@@ -16,7 +16,7 @@
 
 ## Documentation
 
-For detailed documentation on how to use and configure CelestialDocs, visit [celestialdocs.hyperoot.dev](https://celestialdocs.hyperoot.dev).
+For detailed documentation on how to use and configure BACH Money Docs, visit [docs.bach.money](https://docs.bach.money).
 
 ## Contributing
 
@@ -49,4 +49,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Built by HYP3R00T. The source code is available on [GitHub](https://github.com/yourusername/celestialdocs). Crafted with ❤️ and care.
+Built by BACHMoney. The source code is available on [GitHub](https://github.com/yourusername/celestialdocs). Crafted with ❤️ and care.
