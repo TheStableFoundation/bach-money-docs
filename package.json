@@ -1,8 +1,8 @@
 {
-  "name": "celestialdocs",
+  "name": "bach-money-docs",
   "type": "module",
   "version": "0.0.5",
-  "description": "Documentation template using AstroJS and Shadcn",
+  "description": "Documentation website for Bach Money decentralized stablecoin platform.",
   "author": "BACH Money <dev@bach.money>",
   "license": "MIT",
   "repository": {
