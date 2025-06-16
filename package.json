@@ -3,11 +3,11 @@
   "type": "module",
   "version": "0.0.5",
   "description": "Documentation website for Bach Money decentralized stablecoin platform.",
-  "author": "BACH Money <dev@bach.money>",
+  "author": "BACH Money <info@bach.money>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/paydii/bach-money-docs"
+    "url": "https://github.com/TheStableFoundation/bach-money-docs"
   },
   "homepage": "https://docs.bach.money/",
   "scripts": {
