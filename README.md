@@ -1,23 +1,10 @@
-<h1 align="center">BACH Money Docs</h1>
+# BACH Money Docs
 
-<p align="center">
-<img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/paydii/bach-money-docs/deploy.yml?style=for-the-badge&labelColor=363a4f&color=8aadf4">
-</p>
+**BACH Money Docs** is where you can projects documentation aroung Bach Money decentralized stable coin platform.
 
-**BACH Money Docs** is a simple and versatile documentation template built with Astro. It provides a clean and minimal interface for creating documentation websites, leveraging the power of Astro and Tailwind CSS for a streamlined user experience.
+## Developing
 
-## Features
-
-- **Astro Build**: Optimized for fast and efficient static site generation.
-- **Tailwind CSS**: Customizable and responsive design with Tailwind CSS.
-- **Shadcn UI**: Integrated components for a modern UI experience.
-- **Customizable**: Easily configure colors, icons, and layout to fit your needs.
-- **Documentation Ready**: Ideal for creating comprehensive and organized documentation.
-
-## Documentation
-
-For detailed documentation on how to use and configure BACH Money Docs, visit [docs.bach.money](https://docs.bach.money).
-
+You need NodeJS and Astro. This project is deployed on the [smbCloud](https://smbcloud.xyz)
 ## Contributing
 
 Contributions are welcome! If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request.
