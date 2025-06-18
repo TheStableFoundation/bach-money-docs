@@ -1,0 +1,10 @@
+
+name = "bach-money-docs"
+description = "Docs"
+[project]
+id = 1
+name = "bach-money-docs"
+repository = "bach-money-docs"
+description = "Docs"
+created_at = "2025-06-18T19:25:47.119239+00:00"
+updated_at = "2025-06-18T19:25:47.119239+00:00" 
