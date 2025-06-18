@@ -1,7 +1,7 @@
 {
   "name": "bach-money-docs",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Documentation website for Bach Money decentralized stablecoin platform.",
   "author": "BACH Money <info@bach.money>",
   "license": "MIT",
@@ -15,9 +15,13 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "start-bachmoneydocs": "astro start -p 5001"
   },
   "keywords": [
+    "smbcloud",
+    "frontend",
+    "cloud platform",
     "docs",
     "documentation",
     "astro",
