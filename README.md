@@ -1,10 +1,11 @@
 # BACH Money Docs
 
-**BACH Money Docs** is where you can projects documentation aroung Bach Money decentralized stable coin platform.
+**BACH Money Docs** is where you can find projects documentation around Bach Money decentralized stable coin platform. We are currently developing [NotWallet non-custodial stable coin wallet](https://bach.money/wallet), our [core protocol](https://app.bach.money), [the statistics](https://stats.bach.money), and [the Stable Foundation main website](https://bach.money).
 
 ## Developing
 
-You need NodeJS and Astro. This project is deployed on the [smbCloud](https://smbcloud.xyz)
+You need NodeJS and Astro. Use NodeJS version in the .nvmrc.
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request.
@@ -30,10 +31,6 @@ Contributions are welcome! If you have suggestions, improvements, or bug fixes, 
 
 5. **Open a Pull Request**.
 
-## License
+## Deploy on smbCloud
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Built by BACHMoney. The source code is available on [GitHub](https://github.com/yourusername/celestialdocs). Crafted with ❤️ and care.
+Our way to deploy this Next.js app is to use the [smbCloud](https://smbcloud.xyz/).
