@@ -1,4 +1,5 @@
 ---
+import { getCollection } from "astro:content";
 import SideNavMenu from "@/components/docs/SideNavMenu.astro";
 
 import { Button } from "@/components/ui/button";
@@ -7,9 +8,13 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 import { MenuIcon, X } from "lucide-react";
 
-import { menu } from "@/lib/utils";
+import { buildMenu } from "@/lib/utils";
 
 import { menu_items, docconfig } from "@/config";
+
+// Fetch docs and build menu
+const docs = await getCollection("docs");
+const menu = buildMenu(docs);
 
 const pathname: string = new URL(Astro.request.url).pathname;
 const pathname_part: string = pathname.split("/")[1];
