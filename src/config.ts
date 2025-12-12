@@ -6,7 +6,7 @@ export const SITE = {
   desc: "The BACH Money, governed by the BACH Protocol Foundation, is a decentralized autonomous organization (DAO) built on the Solana blockchain",
   title: "BACH Money Docs",
   ogImage: "og-image.jpg",
-  repo: "https://github.com/paydii/bach-money-docs",
+  repo: "https://github.com/TheStableFoundation/bach-money-docs",
 };
 
 export const LOCALE = {
