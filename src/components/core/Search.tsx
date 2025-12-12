@@ -1,4 +1,3 @@
-import { getCollection } from "astro:content";
 import Fuse, { type FuseResult, type IFuseOptions } from "fuse.js";
 import { useState, useMemo, useEffect } from "react";
 
@@ -31,48 +30,53 @@ function extractHeaders(body: string): string[] {
   return headers;
 }
 
-const docs: DocsEntry[] = await getCollection("docs");
+interface SearchProps {
+  docs: DocsEntry[];
+}
 
-const options: IFuseOptions<DocsEntry> = {
-  includeScore: true,
-  threshold: 0.5,
-  location: 0,
-  distance: 100,
-  includeMatches: true,
-  minMatchCharLength: 2,
-  useExtendedSearch: true,
-  findAllMatches: true,
-  keys: [
-    { name: "id", weight: 2.5 },
-    { name: "slug", weight: 2.5 },
-    { name: "body", weight: 1 },
-    {
-      name: "title",
-      weight: 2,
-      getFn: (docs: DocsEntry) => docs.data.title,
-    },
-    {
-      name: "description",
-      weight: 1.75,
-      getFn: (docs: DocsEntry) => docs.data.description || "",
-    },
-    {
-      name: "tags",
-      weight: 1.5,
-      getFn: (docs: DocsEntry) => docs.data.tags.join(" ") || "",
-    },
-    {
-      name: "headers",
-      weight: 2,
-      getFn: (docs: DocsEntry) => extractHeaders(docs.body).join(" "),
-    },
-  ],
-};
+export function Search({ docs }: SearchProps) {
+  const options: IFuseOptions<DocsEntry> = {
+    includeScore: true,
+    threshold: 0.5,
+    location: 0,
+    distance: 100,
+    includeMatches: true,
+    minMatchCharLength: 2,
+    useExtendedSearch: true,
+    findAllMatches: true,
+    keys: [
+      { name: "id", weight: 2.5 },
+      { name: "slug", weight: 2.5 },
+      { name: "body", weight: 1 },
+      {
+        name: "title",
+        weight: 2,
+        getFn: (docs: DocsEntry) => docs.data.title,
+      },
+      {
+        name: "description",
+        weight: 1.75,
+        getFn: (docs: DocsEntry) => docs.data.description || "",
+      },
+      {
+        name: "tags",
+        weight: 1.5,
+        getFn: (docs: DocsEntry) => docs.data.tags.join(" ") || "",
+      },
+      {
+        name: "headers",
+        weight: 2,
+        getFn: (docs: DocsEntry) => extractHeaders(docs.body).join(" "),
+      },
+    ],
+  };
 
-export function Search() {
   const [open, setOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-  const fuse: Fuse<DocsEntry> = useMemo(() => new Fuse(docs, options), [docs]);
+  const fuse: Fuse<DocsEntry> = useMemo(
+    () => new Fuse(docs, options),
+    [docs, options],
+  );
   const results: FuseResult<DocsEntry>[] = useMemo(
     () => fuse.search(searchValue),
     [fuse, searchValue],
