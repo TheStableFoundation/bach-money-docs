@@ -1,10 +1,10 @@
 
-name = "bach-money-docs"
-description = "Docs"
+name = "bachmoneydocs"
+description = "bachmoneydocs"
 [project]
-id = 1
-name = "bach-money-docs"
-repository = "bach-money-docs"
-description = "Docs"
-created_at = "2025-06-18T19:25:47.119239+00:00"
-updated_at = "2025-06-18T19:25:47.119239+00:00" 
+id = 43
+name = "bachmoneydocs"
+repository = "bachmoneydocs"
+description = "bachmoneydocs"
+created_at = "2025-12-12T17:10:50.037760+00:00"
+updated_at = "2025-12-12T17:10:50.037760+00:00"
